@@ -4,7 +4,7 @@ FROM nginx:alpine
 # Set working directory inside the container
 WORKDIR /usr/share/nginx/html
 
-# Remove the default Nginx static files
+# Remove the default Nginx static files.
 RUN rm -rf ./*
 
 # Copy everything from the current directory (src) to the Nginx directory
